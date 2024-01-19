@@ -10,7 +10,12 @@ Dropout: Mitigates overfitting by randomly deactivating neurons during training.
 Binary Classification: Final layer with sigmoid activation for binary cat/dog classification.
 
 
-git clone https://github.com/your-username/CAT-VS-DOG-CLASSIFIER.git
-cd CAT-VS-DOG-CLASSIFIER
+This script defines a Convolutional Neural Network architecture tailored for classifying images of cats and dogs. The convolutional layers learn hierarchical features from the input images, and the dense layers make the final prediction. Batch normalization is applied for better training stability, and dropout layers help prevent overfitting by randomly dropping out a fraction of neurons during training.
+
+The model is structured to take advantage of patterns and spatial hierarchies in the input images, gradually reducing spatial dimensions through convolution and pooling operations. The final layer produces a probability (sigmoid activation) indicating the likelihood of the input image belonging to the "cat" class (closer to 0) or "dog" class (closer to 1).
+
+Before using this model, it needs to be compiled with an appropriate optimizer, loss function, and metrics, followed by training on a labeled dataset of cat and dog images.
+
+
 
 
